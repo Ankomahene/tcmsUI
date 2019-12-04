@@ -29,16 +29,31 @@
         </thead>
         <tbody *ngFor="let customer of customers">
          <tr>
-            <td ><img src="../../assets/images/customer-photos/user1.jpg" width="40" class="mr-3 rounded-circle u-photo"></td>
+            <td ><img src="../../assets/images/customer-photos/user2.png" width="40" class="mr-3 rounded-circle u-photo"></td>
+            <td>{{ customer.customer_id }}</td>
+            <td>{{ customer.customer_name }}</td>
+            <td><span class="badge px-2 level text-light {{customer.customer_level}}">{{ customer.customer_level }}</span></td>
+            <td><a routerLink="/customers/{{ customer.customer_id }}" class="details-btn">View Details</a></td>
+        </tr>
+        
+        <!-- <tr>
+            <td ><img src="../../assets//images/customer-photos/user6.png" width="40" class="mr-3 rounded-circle u-photo"></td>
             <td>1230</td>
-            <td>Shadrack Ankomahene</td>
-            <td><span class="badge px-2 level text-light gold">Gold</span></td>
+            <td>Sandra Eliana</td>
+            <td><span class="badge px-2 level text-light badge-warning">Premium</span></td>
             <td><a routerLink="/customer_details" class="details-btn">View Details</a></td>
         </tr>
 
+        <tr>
+            <td ><img src="../../assets/images/customer-photos/user7.png" width="40" class="mr-3 rounded-circle u-photo"></td>
+            <td>1230</td>
+            <td>Maxwell Doe</td>
+            <td><span class="badge px-2 level text-light badge-success">Platinum</span></td>
+            <td><a routerLink="/customer_details" class="details-btn">View Details</a></td>
+        </tr> -->
+
         </tbody>
     </table>
-
     <!-- end of table -->
     
 </div>

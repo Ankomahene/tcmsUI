@@ -17,7 +17,7 @@ const routes: Routes = [
   {path: "reports", component: ReportsComponent},
   {path: "new_customer", component: NewCustomerComponent},
   {path: "new_project", component: NewProjectComponent},
-  {path: "customer_details", component: CustomerDetailsComponent},
+  {path: "customers/:id", component: CustomerDetailsComponent},
 ];
 
 @NgModule({

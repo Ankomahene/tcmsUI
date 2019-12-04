@@ -25,7 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     NewCustomerComponent,
     NewProjectComponent,
     CustomerDetailsComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
   ],
   imports: [
     BrowserModule,

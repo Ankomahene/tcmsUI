@@ -7,16 +7,17 @@ import { CustomersService } from './customers.service';
   styleUrls: ['./customers.component.css']
 })
 
-
 export class CustomersComponent implements OnInit {
 
+  // Math.floor(Math.random() * 5);
+  
   public customers = [];
 
   constructor(private _customerService: CustomersService) { }
 
   ngOnInit() {
     this._customerService.getCustomers()
-    .subscribe(data => console.log(data))
+    .subscribe(data => this.customers = data )
   }
 
 }
