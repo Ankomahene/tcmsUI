@@ -1,13 +1,23 @@
 
-<div class="container-fluid m-container">
-    <div class="main-content">
-        <h1 class="text-light">{{ title }} - <span id="tcms">{{ sub }}</span></h1>
-        <div class="py-4">
-            <a href="./pages/customers.html" type="button" class="btn btn-raised btn-primary btn-lg w-25 mx-3"> Customers</a>
-            <a href="./pages/projects.html" type="button" class="btn btn-raised btn-success btn-lg w-25">Projects</a>
-        </div>
-    </div>
+<div class="container my-2">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/customers">Customers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/reports">Reports</a>
+            </li>
+        </ul>
 </div>
+    
+<router-outlet></router-outlet>
+<!-- Routed components go here -->
 
 <footer class="footer text-center text-muted my-2">
     <p>{{ footer }}</p>

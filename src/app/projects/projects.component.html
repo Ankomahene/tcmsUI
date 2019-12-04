@@ -1,0 +1,51 @@
+<div class="container my-2">
+        <div class="primary-header p-4 text-center">
+            <h1 class="text-light">TURNTABL CLIENT MANAGEMENT SYSTEM - <span id="tcms">(TCMS)</span></h1>
+        </div>
+
+        <div class="text-center my-4 text-secondary">
+            <div class="row">
+                <div class="col-9"><h2>PROJECTS</h2></div>
+                <div class="col-3">
+                    <a routerLink="/new_project">
+                        <button type="button" class="btn btn-info bmd-btn-fab" data-toggle="tooltip" data-placement="bottom" title="Add new Project">
+                            +
+                        </button>
+                    </a> 
+                </div>
+            </div>
+        </div>
+
+        <!-- table -->
+        <table class="table table-hover">
+            <thead>
+            <tr> 
+                
+                <th scope="col">Project Name</th>
+                <th scope="col">Details</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Turntabl Client Management System with reporting section</td>
+                <td><a routerLink="/customer_details" class="details-btn">View Details</a></td>
+            </tr>
+            <tr>
+                <td>Chat Application for Turntabl employees</td>
+                <td><a routerLink="/customer_details" class="details-btn">View Details</a></td>
+            </tr>
+            <tr>
+                <td>Number Counting Game for Children</td>
+                <td><a routerLink="/customer_details" class="details-btn">View Details</a></td>
+            </tr>
+            <tr>
+                <td>Car Navigation Project for Uber Drivers</td>
+                <td><a routerLink="/customer_details" class="details-btn">View Details</a></td>
+            </tr>
+
+            </tbody>
+
+        </table>
+        <!-- end of table -->
+    </div>

@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="primary-header p-4 text-center">
+        <h1 class="text-light">TURNTABL CLIENT MANAGEMENT SYSTEM - <span id="tcms">(TCMS)</span></h1>
+    </div>
+
+    <div class="text-center my-4 text-secondary">
+        <div class="row">
+            <div class="col-10"><h2>CUSTOMERS</h2></div>
+            <div class="col-2">
+                <a routerLink="/new_customer">
+                    <button type="button" class="btn btn-info bmd-btn-fab" data-toggle="tooltip" data-placement="bottom" title="Add new Customer">
+                        +
+                    </button>
+                </a> 
+            </div>
+        </div>
+    </div>
+
+    <!-- table -->
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th scope="col">photo</th>
+            <th scope="col">Customer ID</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Level</th>
+            <th scope="col">Details</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td ><img src="../../assets/images/customer-photos/user1.jpg" width="40" class="mr-3 rounded-circle u-photo"></td>
+            <td>1230</td>
+            <td>Shadrack Ankomahene</td>
+            <td><span class="badge px-2 level text-light gold">Gold</span></td>
+            <td><a routerLink="/customer_details" class="details-btn">View Details</a></td>
+        </tr>
+        <tr>
+            <td ><img src="../../assets//images/customer-photos/user6.png" width="40" class="mr-3 rounded-circle u-photo"></td>
+            <td>1230</td>
+            <td>Sandra Eliana</td>
+            <td><span class="badge px-2 level text-light badge-warning">Premium</span></td>
+            <td><a routerLink="/customer_details" class="details-btn">View Details</a></td>
+        </tr>
+
+        <tr>
+            <td ><img src="../../assets/images/customer-photos/user7.png" width="40" class="mr-3 rounded-circle u-photo"></td>
+            <td>1230</td>
+            <td>Maxwell Doe</td>
+            <td><span class="badge px-2 level text-light badge-success">Platinum</span></td>
+            <td><a routerLink="/customer_details" class="details-btn">View Details</a></td>
+        </tr>
+        </tbody>
+
+    </table>
+    <!-- end of table -->
+</div>
