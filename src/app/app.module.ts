@@ -12,6 +12,7 @@ import { NewCustomerComponent } from './new-customer/new-customer.component';
 import { NewProjectComponent } from './new-project/new-project.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
