@@ -10,12 +10,6 @@
             </div>
             <div class="card-body">
                 <form [formGroup]="newCustomerForm" (ngSubmit)="onSubmit()" id="form">
-
-                    <div class="form-group w-25 mx-auto border px-2 pb-1 rounded">
-                        <label for="exampleInputName">Customer Id</label>
-                        <input type="number" formControlName="customer_id" class="form-control" maxlength="5" id="exampleInputName" aria-describedby="nameHelp" placeholder="XXXXX">
-                    </div>
-
                     <div class="form-group w-75 mx-auto">
                         <label for="exampleInputName">Customer Name</label>
                         <input type="text" formControlName="customer_name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name">

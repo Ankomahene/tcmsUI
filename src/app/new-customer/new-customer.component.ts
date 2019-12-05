@@ -10,7 +10,6 @@ import { CustomersService } from '../customers/customers.service';
 export class NewCustomerComponent implements OnInit {
 
   newCustomerForm = new FormGroup({
-    customer_id: new FormControl(0),
     customer_name: new FormControl(''),
     customer_address: new FormControl(''),
     customer_email: new FormControl(''),
