@@ -19,4 +19,8 @@ export class CustomersService {
     addNewCustomer(customer: CustomersI): Observable<CustomersI>{
       return this.http.post<CustomersI>(this._url, customer);
     }
+
+    searchCustomerByName(name: string): Observable<CustomersI[]>{
+      return this.http.get<CustomersI[]>(this._url + "/search?name=" + name)
+    }
 }

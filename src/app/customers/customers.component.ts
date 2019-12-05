@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomersService } from './customers.service';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-customers',
@@ -9,8 +10,10 @@ import { CustomersService } from './customers.service';
 
 export class CustomersComponent implements OnInit {
 
-  // Math.floor(Math.random() * 5);
-  
+  searchForm = new FormGroup({
+    customer_name: new FormControl('')
+  });
+
   public customers = [];
 
   constructor(private _customerService: CustomersService) { }
@@ -18,6 +21,14 @@ export class CustomersComponent implements OnInit {
   ngOnInit() {
     this._customerService.getCustomers()
     .subscribe(data => this.customers = data )
+  }
+
+  onSubmit(){
+    this._customerService.searchCustomerByName(this.searchForm.value.customer_name)
+    .subscribe(cus => {
+      this.customers = cus
+      console.log(cus)
+    })
   }
 
 }
