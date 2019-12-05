@@ -9,33 +9,39 @@
                 <h2>Add New Customer</h2>
             </div>
             <div class="card-body">
-                <form action="" id="form">
+                <form [formGroup]="newCustomerForm" (ngSubmit)="onSubmit()" id="form">
+
+                    <div class="form-group w-25 mx-auto border px-2 pb-1 rounded">
+                        <label for="exampleInputName">Customer Id</label>
+                        <input type="number" formControlName="customer_id" class="form-control" maxlength="5" id="exampleInputName" aria-describedby="nameHelp" placeholder="XXXXX">
+                    </div>
+
                     <div class="form-group w-75 mx-auto">
                         <label for="exampleInputName">Customer Name</label>
-                        <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name">
+                        <input type="text" formControlName="customer_name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name">
                     </div>
 
                     <div class="form-group w-75 mx-auto">
                         <label for="exampleInputAddress">Customer Address</label>
-                        <input type="text" class="form-control" id="exampleInputAddress" aria-describedby="addressHelp" placeholder="Enter address">
+                        <input type="text" formControlName="customer_address" class="form-control" id="exampleInputAddress" aria-describedby="addressHelp" placeholder="Enter address">
                     </div>
 
                     <div class="form-group w-75 mx-auto">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="email" formControlName="customer_email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
 
                     <div class="form-group w-75 mx-auto">
                         <label for="exampleInputTelephone">Customer Telephone</label>
-                        <input type="text" class="form-control" id="exampleInputTelephone" aria-describedby="addressHelp" placeholder="+ 233 55 961 7959">
+                        <input type="text" formControlName="customer_telephone" class="form-control" id="exampleInputTelephone" aria-describedby="addressHelp" placeholder="+ 233 55 961 7959">
                     </div>
 
-                    <select id="gender" class="custom-select w-75 my-3">
+                    <select id="gender" formControlName="customer_level" class="custom-select w-75 my-3">
                         <option value='' selected>--level--</option>
-                        <option value="gold">Gold</option>
-                        <option value="premium">Premium</option>
-                        <option value="platinum">Platinum</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Premium">Premium</option>
+                        <option value="Platinum">Platinum</option>
                     </select>
 
                     <input type="submit" class="btn btn-info btn-raised w-75 my-3" value="Add Customer">

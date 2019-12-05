@@ -1,4 +1,4 @@
-export interface CustomersI{
+export interface CustomersI {
     customer_id: number,
     customer_name: string,
     customer_address: string,

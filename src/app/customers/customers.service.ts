@@ -15,4 +15,8 @@ export class CustomersService {
     getCustomers(): Observable<CustomersI[]>{
         return this.http.get<CustomersI[]>(this._url);
     }
+
+    addNewCustomer(customer: CustomersI): Observable<CustomersI>{
+      return this.http.post<CustomersI>(this._url, customer);
+    }
 }

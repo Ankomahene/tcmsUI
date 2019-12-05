@@ -13,6 +13,9 @@ import { NewProjectComponent } from './new-project/new-project.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +33,9 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
