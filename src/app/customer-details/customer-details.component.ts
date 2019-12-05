@@ -12,7 +12,15 @@ import { Observable } from 'rxjs';
 })
 export class CustomerDetailsComponent implements OnInit {
 
-  public customer = {};
+  public customer = {
+    customer_id: 0,
+    customer_name: '',
+    customer_address: '',
+    customer_email: '',
+    customer_telephone: '',
+    customer_level: ''
+  };
+  
   public customerId;
   private _url: string = "https://tcms-customers-d2.herokuapp.com/api/v1/customers/";
 
