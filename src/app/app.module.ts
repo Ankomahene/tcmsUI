@@ -15,6 +15,8 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthComponent } from './auth/auth.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NewProjectComponent,
     CustomerDetailsComponent,
     ProjectDetailsComponent,
+    AuthComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
